@@ -1,0 +1,17 @@
+<div class='container'>
+
+
+<form (submit)='createTask()'>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" name='newTask.title' [(ngModel)]='newTask.title' placeholder="Ex. 'Take out trash'">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" name='newTask.description' [(ngModel)]='newTask.description' placeholder="Ex. 'Needs to be done by 12'">
+  </div>
+
+  <input type='submit' class='btn-primary' value='Create Task'>
+</form>
+
+</div>
